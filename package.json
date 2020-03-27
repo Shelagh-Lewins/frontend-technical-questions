@@ -22,7 +22,16 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": ["react-app", "airbnb"],
+    "rules": {
+      "indent": [
+        "error",
+        "tab",
+        {
+          "SwitchCase": 1
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -38,6 +47,11 @@
   },
   "devDependencies": {
     "concurrently": "^5.0.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
     "json-server": "^0.15.1"
   }
 }
