@@ -30,6 +30,26 @@
         {
           "SwitchCase": 1
         }
+      ],
+      "no-tabs": [
+        "off"
+      ],
+      "react/jsx-indent": [
+        "error",
+        "tab"
+      ],
+      "react/jsx-indent-props": [
+        "error",
+        "tab"
+      ],
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
       ]
     }
   },

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
 
 class QuestionOne extends Component {
-	constructor(props){
+	constructor(props) {
 		super(props);
 		this.state = {
 			label: "I've been clicked: ",
