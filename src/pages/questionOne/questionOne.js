@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
+import './questionOne.css';
 
 class QuestionOne extends Component {
 	constructor(props) {
@@ -25,7 +26,7 @@ class QuestionOne extends Component {
 		const { counter, label } = this.state;
 
 		return (
-			<div style={{ marginTop: 48 }}>
+			<div className="question-one">
 				<Button
 					variant="contained"
 					onClick={this.handleOnClick}
