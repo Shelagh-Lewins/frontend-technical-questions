@@ -1,5 +1,7 @@
-import AcUnit from "@material-ui/icons/AcUnit";
-import UUID from "uuid/v4";
+import AcUnit from '@material-ui/icons/AcUnit';
+import UUID from 'uuid/v4';
+// Assume the mock data will be extended in future
+/* eslint-disable import/prefer-default-export */
 
 /*
 * Please do not add all the mock data statically here.
@@ -8,21 +10,24 @@ import UUID from "uuid/v4";
 
 const defaultMock = {
 	species: 'Human',
-	name : 'Jon Snow',
-	icon: AcUnit,
-	description: 'You know nothing, Jon Snow.'
+	name: 'Jon Snow',
+	Icon: AcUnit,
+	description: 'You know nothing, Jon Snow.',
 };
 
 
-const createRowData = ({name, species, Icon, description}) => {
-	let rowData = defaultMock;
-	rowData.id = UUID();
-	rowData.name = name ? name: rowData.name;
-	rowData.species = species ? species: rowData.species;
-	rowData.icon = Icon ? Icon : rowData.icon;
-	rowData.description = description ? description : rowData.description;
-	return rowData
-}
+const createRowData = ({
+	name,
+	species,
+	Icon,
+	description,
+}) => ({
+	id: UUID(),
+	name: name || defaultMock.name,
+	species: species || defaultMock.species,
+	Icon: Icon || defaultMock.Icon,
+	description: description || defaultMock.description,
+});
 
 
-export { createRowData }
+export { createRowData };
