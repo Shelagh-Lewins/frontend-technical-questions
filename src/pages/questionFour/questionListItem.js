@@ -45,6 +45,7 @@ const QuestionListItem = (props) => {
 			Icon,
 			name,
 			species,
+			score,
 		},
 		selected,
 	} = props;
@@ -67,6 +68,22 @@ const QuestionListItem = (props) => {
 					primary={`${name}: ${species || 'Other'}`}
 					secondary={(
 						<>
+							<span className={classes['secondary-span']}>
+								<Typography
+									variant="subtitle2"
+									variantMapping={{ subtitle2: 'span' }}
+									className={classes.header}
+								>
+									Score:
+								</Typography>
+								<Typography
+									variant="body2"
+									variantMapping={{ body2: 'span' }}
+									className={classes.label}
+								>
+									{score}
+								</Typography>
+							</span>
 							<span className={classes['secondary-span']}>
 								<Typography
 									variant="subtitle2"

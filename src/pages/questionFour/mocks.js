@@ -8,6 +8,7 @@ global.defaultMock = {
 	Icon: AcUnit,
 	description: 'You know nothing, Jon Snow.',
 	contact: {},
+	score: 10,
 };
 
 const createDefaultMock = () => {
