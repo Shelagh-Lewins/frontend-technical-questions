@@ -1,28 +1,28 @@
-import React from 'react'
-import Typography from "@material-ui/core/Typography";
-import {CardMedia} from "@material-ui/core";
-import kobayashiMaru from "./images/kobayashiMaru.jpg";
+import React from 'react';
+import Typography from '@material-ui/core/Typography';
+import { CardMedia } from '@material-ui/core';
+import Solution from './images/solution.png';
 
-const question = ()=>{
+const question = () => {
 	return (
 		<div>
 			<Typography variant="h4" gutterBottom>
 				Question Four
 			</Typography>
 			<Typography variant="h5" gutterBottom>
-				Kobayashi Maru
+				Click me
 			</Typography>
 			<Typography variant="body1" gutterBottom>
-				Kirk solves the unsolvable by changing the rules, this is your chance to show us how you would solve your own Kobayashi Maru.
+				This task revolves around a bug in a clickable list component.
 			</Typography>
 			<Typography variant="body1" gutterBottom>
-				Your task if you choose to accept it, is to write your own test and create a challenge for us to solve!
+				Your task if you choose to accept it, is to resolve this bug (displayed on the right and in the console).
 			</Typography>
 			<Typography variant="body1" gutterBottom>
-				Ideally it would be written as a bug, but the complexity and requirements are up to you. So 'show us what you got'!
+				Below is what the final solution should look like; you should be able to select any list item. (Email address and phone number will vary.)
 			</Typography>
 			<CardMedia
-				image={kobayashiMaru}
+				image={Solution}
 				style={{
 					width: '100%',
 					height: 500,
@@ -31,7 +31,7 @@ const question = ()=>{
 				title="The Solution"
 			/>
 		</div>
-	)
+	);
 };
 
-export default 	question
+export default 	question;
