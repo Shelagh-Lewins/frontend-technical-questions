@@ -40,22 +40,17 @@ class QuestionFour extends Component {
 	constructor(props) {
 		super(props);
 
-		// works TODO remove
 		const mockData = createMockData();
 
 		this.state = {
 			mockData,
-			selectedListItem: mockData[0].contact.email,
 		};
 	}
 
 	componentDidUpdate() {
-		/* const mockData = createMockData();
-
 		this.setState({
-			mockData,
-			selectedListItem: mockData[0].contact.email,
-		}); */
+			selectedListItem: this.state.mockData[0].contact.email,
+		});
 	}
 
 	handleOnClick = (listItem) => {
